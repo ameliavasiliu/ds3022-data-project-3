@@ -38,7 +38,7 @@ def analyze_commits():
         plt.title('Number of Commits per Package')
         plt.xticks(rotation=45)
         plt.tight_layout()
-        plt.savefig('./visualizations/commit_counts_per_package.png')
+        plt.savefig('./Carissa-Kayla/visualizations/commit_counts_per_package.png')
         logger.info("Saved commit counts bar chart as commit_counts_per_package.png.")
         print( commit_counts_df)
     except Exception as e:
@@ -113,7 +113,7 @@ def visualize_hourly_commits():
         plt.ylabel("commits")
         plt.xlabel("hours in the day")
 
-        plt.savefig("./visualizations/hourly_commits.png")
+        plt.savefig("./Carissa-Kayla/visualizations/hourly_commits.png")
 
         logger.info("finished plotting commits per hour in the day (24)")
 
@@ -178,7 +178,7 @@ def visualize_daily_commits():
         plt.ylabel("commits")
         plt.xlabel("days in the year")
 
-        plt.savefig("./visualizations/daily_commits.png")
+        plt.savefig("./Carissa-Kayla/visualizations/daily_commits.png")
 
         logger.info("finished plotting commits per day of year (365)")
 
@@ -243,7 +243,7 @@ def visualize_weekly_commits():
         plt.ylabel("commits")
         plt.xlabel("weeks in the year")
 
-        plt.savefig("./visualizations/weekly_commits.png")
+        plt.savefig("./Carissa-Kayla/visualizations/weekly_commits.png")
 
         logger.info("finished plotting commits per week")
 
@@ -308,7 +308,7 @@ def visualize_monthly_commits():
         plt.ylabel("commits")
         plt.xlabel("months in the year")
 
-        plt.savefig("./visualizations/monthly_commits.png")
+        plt.savefig("./Carissa-Kayla/visualizations/monthly_commits.png")
 
         logger.info("finished plotting commits per month")
 
@@ -335,7 +335,7 @@ def get_last1000_commit_users(package):
                                          """, [package],).df()
 
         
-        directory = "./last_1000_commit_users/"
+        directory = "./Carissa-Kayla/last_1000_commit_users/"
         os.makedirs(directory, exist_ok=True)
 
         filename = f"{directory}{package}_last1000commitusers.txt"
@@ -418,7 +418,7 @@ def plot_separate_percent_changes(dict_perc_change):
     plt.gca().spines['right'].set_visible(False)
     plt.title("Percent Change in Commits (Last 3 Months vs Previous 3 Months)", x = 0.4)
     plt.tight_layout()
-    plt.savefig("./visualizations/threemo_perc_change.png")
+    plt.savefig("./Carissa-Kayla/visualizations/threemo_perc_change.png")
 
     #6 MONTH PLOT
     plt.clf()
@@ -434,7 +434,7 @@ def plot_separate_percent_changes(dict_perc_change):
     plt.gca().spines['right'].set_visible(False)
     plt.title("Percent Change in Commits (Last 6 Months vs Previous 6 Months)", x = 0.4)
     plt.tight_layout()
-    plt.savefig("./visualizations/sixmo_perc_change.png")
+    plt.savefig("./Carissa-Kayla/visualizations/sixmo_perc_change.png")
 
 
 
