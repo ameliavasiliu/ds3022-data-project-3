@@ -17,7 +17,7 @@ FDA recall activity shows long term structural patterns that reveal where produc
 
 
 ## Plot / Visualization
-![Reasons for Recall Plot](fda-recalls/reasons.png)
+![Reasons for Recall Plot](reasons.png)
 
 ## GitHub Repository
 https://github.com/gracepitts/fda-recalls 
